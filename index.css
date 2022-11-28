@@ -1,0 +1,251 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #000000;
+  min-height: 100vh;
+  background-color: rgb(135, 171, 218);
+}
+
+span {
+  color: #eb7623;
+}
+
+.section {
+  padding: 30px 20px;
+  margin: 40px auto 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.section__title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.form__label {
+  font-size: 12px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form__input {
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+}
+
+.form__button,
+.buttons__list_button {
+  font-size: 13px;
+  padding: 5px;
+  min-height: 25px;
+  min-width: 35px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons__list_item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.pairs__list_item_btn {
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+.pairs__list_item_btn:focus {
+  color: #eb7623;
+}
+
+.buttons__list {
+  margin-top: 20px;
+}
+
+.selected {
+  border: 1px solid red;
+}
+
+.section__list_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__pretitle {
+  font-size: 12px;
+}
+
+.pairs__list_wrap {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 200px;
+  padding: 4px;
+  overflow-y: scroll;
+}
+
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.section__xml {
+  border: 1px solid #ccc;
+  height: 200px;
+  font-size: 12px;
+  padding: 8px 5px;
+  margin: 30px auto 0;
+  overflow-y: scroll;
+}
+
+.xml__list_item {
+  color: #000000;
+  margin-left: 25px;
+}
+
+.xml__list_text {
+  margin-left: 25px;
+}
+
+@media screen and (min-width: 420px) {
+  .section {
+    width: 380px;
+  }
+
+  .section__title {
+    font-size: 18px;
+  }
+
+  .form__label {
+    font-size: 13px;
+  }
+
+  .form__input {
+    font-size: 16px;
+  }
+
+  .form__button,
+  .buttons__list_button {
+    font-size: 15px;
+  }
+
+  .section__pretitle {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 750px;
+  }
+
+  .section__title {
+    font-size: 20px;
+    padding-left: 25px;
+  }
+
+  .form__label {
+    font-size: 16px;
+    width: 70%;
+    margin-right: 60px;
+  }
+
+  .form__input {
+    font-size: 18px;
+  }
+
+  .form__button,
+  .buttons__list_button {
+    font-size: 16px;
+  }
+
+  .section__wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .section__pretitle {
+    font-size: 16px;
+  }
+
+  .pairs__list_wrap {
+    width: 525px;
+  }
+
+  .buttons__list {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .section__xml {
+    font-size: 18px;
+    padding: 8px 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buttons__list_button {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .section {
+    width: 1200px;
+  }
+  .section__title {
+    font-size: 24px;
+    padding-left: 60px;
+  }
+
+  .form__label {
+    font-size: 16px;
+    margin-right: 60px;
+  }
+
+  .form__input {
+    font-size: 20px;
+  }
+
+  .pairs__list_wrap {
+    width: 840px;
+  }
+}

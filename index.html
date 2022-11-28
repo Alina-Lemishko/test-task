@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="section">
+      <h1 class="section__title">Test</h1>
+      <form class="form">
+        <label class="form__label"
+          >Name/Value pairs
+          <input
+            class="form__input"
+            type="text"
+            name="inputQuery"
+            placeholder="Name=Value"
+          />
+        </label>
+        <button class="form__button" type="submit" disabled>Add</button>
+      </form>
+      <div class="section__wrap">
+        <div class="section__list_wrap">
+          <p class="section__pretitle">Name/Value pairs list</p>
+          <div class="pairs__list_wrap">
+            <ul class="pairs__list"></ul>
+          </div>
+        </div>
+        <ul class="buttons__list">
+          <li class="buttons__list_item">
+            <button
+              class="buttons__list_button button__sort_name"
+              type="button"
+            >
+              Sort by Name
+            </button>
+          </li>
+          <li class="buttons__list_item">
+            <button
+              class="buttons__list_button button__sort_value"
+              type="button"
+            >
+              Sort by Value
+            </button>
+          </li>
+          <li class="buttons__list_item">
+            <button
+              class="buttons__list_button button__sort_delete"
+              type="button"
+            >
+              Delete
+            </button>
+          </li>
+          <li class="buttons__list_item">
+            <button class="buttons__list_button button__sort_xml" type="button">
+              Show XML
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="section__xml visually-hidden">
+        <p class="xml__title">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+        <p class="xml__title">&lt;<span>pairs</span>&gt;</p>
+        <ul class="xml__list"></ul>
+        <p class="xml__title">&lt;<span>/pairs</span>&gt;</p>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
